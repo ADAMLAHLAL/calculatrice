@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .calculator {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(205, 201, 201, 0.1);
+    overflow: hidden;
+  }
+  
+  .display {
+    background-color: #816e6e;
+    color: #fff;
+    font-size: 2rem;
+    text-align: right;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 80px;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background-color: #e6dcdc;
+  }
+  
+  button {
+    background-color: #ebe5e5;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  button:hover {
+    background-color: #792c2c;
+  }
+  
+  .equals {
+    grid-column: span 2;
+    background-color: #9b4141;
+    color: white;
+  }
+  
+  .equals:hover {
+    background-color: #140c0e;
+  }
+  
+  .zero {
+    grid-column: span 1 ;
+  }
+  .history {
+    max-height: 20px;
+    overflow-y: auto; /* Ajoute un défilement si l'historique est long */
+    background: #b38989;
+    padding: 10px;
+    border-top: 1px solid #b18d8d;
+  }
+  .history div {
+    font-size: 1rem;
+    margin-bottom: 2mm;
+  }
+  @media (max-width: 600px) {
+    .calculator {
+      width: 95%; /* Réduire la taille sur petits écrans */
+    }
+    button {
+      font-size: 1.2rem; /* Réduire la taille des boutons */
+      padding: 10px; /* Ajuster les marges des boutons */
+    }
+  }
+  
+  
+  
